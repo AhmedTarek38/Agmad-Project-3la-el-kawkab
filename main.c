@@ -19,7 +19,7 @@ int main() {
     scanf("%f", &num2);
 
     // Calling the addNumbers function and printing the result
-    ifloat result = addNumbers(num1, num2);
+    float result = addNumbers(num1, num2);
     printf("The sum of %f and %f is: %f\n", num1, num2, result);
 
     float z = 0.0;
