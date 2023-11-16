@@ -2,13 +2,7 @@
 #include <conio.h>
 #include "multi.h"
 
-int main()
-{
 
-
-    getch();
-    return 0;
-}
 // Function to add two numbers //SUM Function
 int addNumbers(int a, int b) {
     return a + b;
