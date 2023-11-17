@@ -2,7 +2,10 @@
 #include <conio.h>
 #include "multi.h"
 
-
+float sub(float a, float b)
+{
+	return a-b;
+}
 // Function to add two numbers //SUM Function
 int addNumbers(float a, float b) {
     return a + b;
@@ -27,6 +30,13 @@ int main() {
     float z = 0.0;
     z = multi(2.1, 2.3);
     printf("The value is %f", z);
+
+    float x,y,r;
+	printf("enter two numbers");
+	scanf("%f",&x);
+	scanf("%f",&y);
+	r=sub(x,y);
+	printf("%f",r);
     getch();
     return 0;
 }
