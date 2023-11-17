@@ -7,6 +7,8 @@
 int addNumbers(float a, float b) {
     return a + b;
 }
+//multiplication
+float multi(float x, float y) { return (x * y);}
 
 int main() {
    float num1, num2;
