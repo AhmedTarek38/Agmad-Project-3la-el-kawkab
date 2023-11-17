@@ -48,6 +48,13 @@ int main() {
 	r=sub(x,y);
 	printf("%f",r);
 
+	//Using the division function
+	printf("Enter two numbers: ");
+	scanf("%f%f",&num1,&num2);
+	result=division(num1,num2);
+	printf("The division of %f by %f is: %f",num1,num2,result);
+
+	//Trying to make a calculator application but not sure if it works
 	char op;
 
 	printf("Enter the first number: ");
@@ -57,6 +64,7 @@ int main() {
     scanf("%f", &num2);
 
     printf("Enter the operation needed: ");
+    fflush(stdin);
     scanf("%c", &op);
 
     switch(op)
@@ -81,5 +89,5 @@ int main() {
     	printf("Not valid");
     }
     getch();
-    return 0;
+    return 0;
 }
