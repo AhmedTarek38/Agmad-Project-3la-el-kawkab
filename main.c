@@ -67,7 +67,7 @@ int main() {
 
     printf("Enter the operation needed:\n ");
     
-    scanf("%c", &op);
+    scanf(" %c", &op);
 
     switch(op)
     {
