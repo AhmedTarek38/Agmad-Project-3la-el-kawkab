@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
-#include "multi.h"
+
+
 
 float sub(float a, float b)
 {
@@ -36,35 +36,37 @@ int main() {
     // Calling the addNumbers function and printing the result
     float result = addNumbers(num1, num2);
     printf("The sum of %f and %f is: %f\n", num1, num2, result);
-
+   
+   // calling the multiplication func
     float z = 0.0;
-    z = multi(2.1, 2.3);
-    printf("The value is %f", z);
+    z = multi(num1, num2);
+    printf("The value of multiplication of is %f\n", z);
 
+// calling the subtraction func
     float x,y,r;
-	printf("enter two numbers");
+	printf("enter two numbers :");
 	scanf("%f",&x);
 	scanf("%f",&y);
 	r=sub(x,y);
-	printf("%f",r);
+	printf(" the subtraction of two numbers is %f\n",r);
 
 	//Using the division function
 	printf("Enter two numbers: ");
 	scanf("%f%f",&num1,&num2);
 	result=division(num1,num2);
-	printf("The division of %f by %f is: %f",num1,num2,result);
+	printf("The division of %f by %f is: %f\n",num1,num2,result);
 
 	//Trying to make a calculator application but not sure if it works
 	char op;
 
-	printf("Enter the first number: ");
+	printf("Enter the first number:\n ");
 	scanf("%f", &num1);
 
-    printf("Enter the second number: ");
+    printf("Enter the second number:\n ");
     scanf("%f", &num2);
 
-    printf("Enter the operation needed: ");
-    fflush(stdin);
+    printf("Enter the operation needed:\n ");
+    
     scanf("%c", &op);
 
     switch(op)
@@ -88,6 +90,6 @@ int main() {
     default:
     	printf("Not valid");
     }
-    getch();
+  
     return 0;
 }
